@@ -1,0 +1,29 @@
+* Hello World
+** Programming Language
+
+Here are some programming language as below:
+
+  - C
+  - C#
+  - Java
+  - JavaScript
+  - Lisp
+  - Scheme
+    
+** How to print Hello World?
+
+*** In C
+
+Here is an example for C
+
+#+begin_src c
+printf("Hello World\n");
+#+end_src
+  
+*** In Java
+
+Here is an example for Java
+
+#+begin_src java
+System.out.println("Hello World");
+#+end_src
