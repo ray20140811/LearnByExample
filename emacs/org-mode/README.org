@@ -1,0 +1,18 @@
+* How to use Emacs org-mode?
+
+** How to export an org file to markdown file?
+
+Use =org-md-export-to-markdown= command to export to a text file with Markdown syntax.
+
+
+
+
+
+
+
+
+
+
+
+
+

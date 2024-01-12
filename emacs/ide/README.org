@@ -1,0 +1,15 @@
+* How to use Emacs as an IDE?
+
+** Compile
+
+Use Emacs to open =main.c= file. Run =M-x compile=.
+
+** Debug
+
+Type =M-x gdb=
+
+** Version Control
+
+Install =magit= package
+
+
