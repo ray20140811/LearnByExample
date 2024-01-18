@@ -1,0 +1,13 @@
+* EDE - Emacs Development Environment
+
+It is a package that simplifies the task of creating, building, and debugging large programs with Emacs. It provides some of the features of an IDE, or Integrated Development Environment, in Emacs.
+
+** To run a program in EDE mode, you can use the following steps:
+
+1. Define a new project by visiting a file in the desired project root and typing M-x ede-new. This command prompts for a project type, which refers to the underlying method that EDE will use to manage the project. The most common project types are ‘Make’, which uses Makefiles, and ‘Automake’, which uses GNU Automake.
+
+2. Define a new target by typing C-c . t (M-x ede-new-target). This command also asks if you wish to add the current file to that target, which means that the target is to be built from that file.
+
+3. Add more files to the target by typing C-c . a (ede-add-file) .
+
+4. Build the target by typing C-c . c (ede-compile-target). To build all the targets in the project, type C-c . C (ede-compile-project) .
