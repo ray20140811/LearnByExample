@@ -1,34 +1,35 @@
 
 # Table of Contents
 
-1.  [How to use Emacs org-mode?](#orgfa904b0)
-    1.  [How to export an org file to markdown file?](#org5fdc928)
-    2.  [How to export org file to markdown by shell ?](#org5e986ee)
-    3.  [How to use makefile to export org file to markdown?](#orgb81abf5)
-    4.  [How to convert multiple org files to markdown?](#org88866dd)
-    5.  [How to convert multiple org files which located under current directory to markdown ?](#orgc1faa2d)
+1.  [How to use Emacs org-mode?](#org8e4ac17)
+    1.  [How to export an org file to markdown file?](#orga253089)
+    2.  [How to export org file to markdown by shell ?](#orga354c7e)
+    3.  [How to use makefile to export org file to markdown?](#orgd0121e1)
+    4.  [How to convert multiple org files to markdown?](#org291b210)
+    5.  [How to convert multiple org files which located under current directory to markdown ?](#org4ee2211)
+    6.  [org-mode如何產生類似 markdown \`\` 標記](#orgb96cb57)
 
 
-<a id="orgfa904b0"></a>
+<a id="org8e4ac17"></a>
 
 # How to use Emacs org-mode?
 
 
-<a id="org5fdc928"></a>
+<a id="orga253089"></a>
 
 ## How to export an org file to markdown file?
 
 Use `org-md-export-to-markdown` command to export to a text file with Markdown syntax.
 
 
-<a id="org5e986ee"></a>
+<a id="orga354c7e"></a>
 
 ## How to export org file to markdown by shell ?
 
 Use `emacs input.org --batch -f org-md-export-to-markdown -f save-buffer`  command to export an org file to markdown
 
 
-<a id="orgb81abf5"></a>
+<a id="orgd0121e1"></a>
 
 ## How to use makefile to export org file to markdown?
 
@@ -40,7 +41,7 @@ Use `emacs input.org --batch -f org-md-export-to-markdown -f save-buffer`  comma
         rm -f output.md
 
 
-<a id="org88866dd"></a>
+<a id="org291b210"></a>
 
 ## How to convert multiple org files to markdown?
 
@@ -57,7 +58,7 @@ Use `emacs input.org --batch -f org-md-export-to-markdown -f save-buffer`  comma
         rm -f $(MD_FILES)
 
 
-<a id="orgc1faa2d"></a>
+<a id="org4ee2211"></a>
 
 ## How to convert multiple org files which located under current directory to markdown ?
 
@@ -74,4 +75,11 @@ Use `emacs input.org --batch -f org-md-export-to-markdown -f save-buffer`  comma
     .PHONY: clean
     clean:
         rm -f $(MD_FILES)
+
+
+<a id="orgb96cb57"></a>
+
+## org-mode如何產生類似 markdown \`\` 標記
+
+使用 `test` 可以生成類似 markdown \`test\` 
 
