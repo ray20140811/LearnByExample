@@ -1,0 +1,16 @@
+;; Object include
+;; EDE Project Files are auto generated: Do Not Edit
+(ede-proj-project "include"
+  :file "Project.ede"
+  :name "include"
+  :targets
+  (list
+    (ede-proj-target-makefile-miscelaneous "includes"
+      :object-name "includes"
+      :name "includes"
+      :path ""
+      :source '("myproj.h")))
+  :configurations '("debug" "release")
+  :object-name "include"
+  :makefile-type Makefile
+  :configuration-variables '("debug" (("DEBUG" . "1"))))

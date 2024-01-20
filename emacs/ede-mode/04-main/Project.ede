@@ -1,0 +1,10 @@
+;; Object myproject
+;; EDE Project Files are auto generated: Do Not Edit
+(ede-proj-project "myproject"
+  :file "Project.ede"
+  :name "myproject"
+  :targets nil
+  :configurations '("debug" "release")
+  :object-name "myproject"
+  :makefile-type Makefile
+  :configuration-variables '("debug" (("DEBUG" . "1"))))
