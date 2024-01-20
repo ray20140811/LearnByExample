@@ -9,7 +9,7 @@
       :object-name "myprogram"
       :name "myprogram"
       :path ""
-      :source '("main.c" "myfunction.c")
+      :source '("main.c" "mylib.c")
       :configuration-variables '("debug" ("CFLAGS" . "-g") ("LDFLAGS" . "-g"))))
   :configurations '("debug" "release")
   :object-name "myproject"

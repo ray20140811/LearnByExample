@@ -1,8 +1,10 @@
 #include <stdio.h>
-#include "mylib.h"
+#include "myproj.h"
 
 int main()
 {
-    printf("square(%d)=%d\n", 2, square(2));
+    printf("hello\n");
+    printf("square(2)=%d\n", square(2));
+
     return 0;
 }

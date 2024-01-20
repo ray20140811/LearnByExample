@@ -10,8 +10,8 @@
 top="$(CURDIR)"/
 ede_FILES=Project.ede Makefile
 
-myprogram_SOURCES=main.c myfunction.c
-myprogram_OBJ= main.o myfunction.o
+myprogram_SOURCES=main.c mylib.c
+myprogram_OBJ= main.o mylib.o
 CC=gcc
 C_COMPILE=$(CC) $(DEFS) $(INCLUDES) $(CPPFLAGS) $(CFLAGS)
 C_DEPENDENCIES=-Wp,-MD,.deps/$(*F).P
@@ -20,7 +20,7 @@ VERSION=1.0
 DISTDIR=$(top)myproject-$(VERSION)
 top_builddir =
 
-DEP_FILES=.deps/main.P .deps/myfunction.P
+DEP_FILES=.deps/main.P .deps/mylib.P
 
 all: myprogram
 
