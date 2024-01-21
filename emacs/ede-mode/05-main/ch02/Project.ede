@@ -1,0 +1,23 @@
+;; Object ch02
+;; EDE Project Files are auto generated: Do Not Edit
+(ede-proj-project "ch02"
+  :file "Project.ede"
+  :name "ch02"
+  :targets
+  (list
+    (ede-proj-target-makefile-program "01"
+      :object-name "01"
+      :name "01"
+      :path ""
+      :source '("01.c")
+      :configuration-variables '("debug" ("CFLAGS" . "-g") ("LDFLAGS" . "-g")))
+    (ede-proj-target-makefile-program "02"
+      :object-name "02"
+      :name "02"
+      :path ""
+      :source '("02.c")
+      :configuration-variables '("debug" ("CFLAGS" . "-g") ("LDFLAGS" . "-g"))))
+  :configurations '("debug" "release")
+  :object-name "ch02"
+  :makefile-type Makefile
+  :configuration-variables '("debug" (("DEBUG" . "1"))))
