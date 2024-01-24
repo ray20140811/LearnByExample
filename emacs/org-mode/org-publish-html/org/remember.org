@@ -1,0 +1,11 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
+
+* [[https://emacs.stackexchange.com/questions/59001/unable-to-load-my-css-during-org-publish-project][How to load css during org-publish-project]]
+
+Try adding this line to the top of the org file:
+
+#+begin_src
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
+#+end_src
+
+Reference: https://orgmode.org/manual/CSS-support.html
