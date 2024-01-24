@@ -40,3 +40,15 @@ git config core.editor emacs
 ```
 
 
+
+
+## 狀況題:
+
+### git push之後,後悔了
+
+1. 用 `git log` 查看提交歷史,找到要回退的版本
+2. 用 `git reset --hard HEAD^` 回退到前一個版本, 或者 指定版本 `git reset --hard <commitid>`
+3. 用 `git push origin HEAD --force` 或 `git push --force origin master` 強制覆蓋遠端分支上的歷史記錄
+
+*!!! 注意* 使用 `--force` 參數強制覆蓋遠端分支上的歷史記錄可能會導致資料丟失,請確保資料已備份(包含本地),避免意外刪除他人的修改.且之前提交的記錄都會消失,謹慎使用
+
