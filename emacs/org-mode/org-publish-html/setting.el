@@ -4,7 +4,6 @@
 (require 'ox-publish)
 (setq org-publish-project-alist
       '(
-	
 	;; ... add all the components here (see below)...
 	("org-notes"
 	 :base-directory "~/MyProjects/LearnByExample/emacs/org-mode/org-publish-html/org/"
@@ -23,5 +22,6 @@
 	 :publishing-function org-publish-attachment
 	 )
 	("org" :components ("org-notes" "org-static"))
+	))
 
-	      ))
+(setq org-export-with-section-numbers nil)

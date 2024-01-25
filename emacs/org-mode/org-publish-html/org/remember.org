@@ -1,5 +1,36 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
 
+* [[https://stackoverflow.com/questions/9092445/how-do-you-remove-numbering-from-headers-when-exporting-from-org-mode][How to remove numbering from headers when exporting from org-mode?]]
+
+** disable numbering on export for a single file
+
+If you only want to disable numbering on export for a single file you can use the following:
+
+#+begin_src
+#+OPTIONS: num:nil
+#+end_src
+
+See [[http://orgmode.org/manual/Export-settings.html#Export-settings][Export Setting]] for the details and other export options that can be set on a per-file basis.
+
+See [[https://orgmode.org/org.html#HTML-specific-export-settings][HTML Specific Export Settings]] for HTML specific ones.
+
+** disable section numbering for all exports at all times
+
+You can customize the org-mode.
+
+#+begin_src
+M-x customize-mode
+org-mode
+#+end_src
+
+Then you choose Org Export/Org Export General/Org Export With Section Numbers
+
+As an alternative put the following in your .emacs
+
+#+begin_src
+(setq org-export-with-section-numbers nil)
+#+end_src
+
 * [[https://emacs.stackexchange.com/questions/59001/unable-to-load-my-css-during-org-publish-project][How to load css during org-publish-project]]
 
 Try adding this line to the top of the org file:
@@ -9,3 +40,4 @@ Try adding this line to the top of the org file:
 #+end_src
 
 Reference: https://orgmode.org/manual/CSS-support.html
+
