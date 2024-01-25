@@ -1,0 +1,26 @@
+#+titile: C 語言的 extern 用法
+#+date: 2024-01-25
+
+C 語言的 extern 關鍵字可以用來聲明一個變數或函式是外部的，也就是說它是在其他的 C 檔案中定義的。這樣可以讓不同的 C 檔案共享使用同一個變數或函式，而不需要重複定義。
+
+extern 的用法有以下幾種情況：
+
+- 在函式內部聲明全域變數或函式，以便在其他檔案中使用。例如：
+
+  #+begin_src
+    // a.c
+    int counter = 0; // 全域變數
+
+    void aaa() {
+      counter++; // 使用全域變數
+    }
+
+    // b.c
+    extern int counter; // 聲明外部變數
+
+    void bbb() {
+      printf("%d\n", counter); // 使用外部變數
+    }
+  #+end_src
+
+  

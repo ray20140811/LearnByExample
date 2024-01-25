@@ -1,0 +1,17 @@
+;; Object main
+;; EDE Project Files are auto generated: Do Not Edit
+(ede-proj-project "main"
+  :file "Project.ede"
+  :name "main"
+  :targets
+  (list
+    (ede-proj-target-makefile-program "main"
+      :object-name "main"
+      :name "main"
+      :path ""
+      :source '("main.c" "extern.c" "utility.c")
+      :configuration-variables '("debug" ("CFLAGS" . "-g") ("LDFLAGS" . "-g"))))
+  :configurations '("debug" "release")
+  :object-name "main"
+  :makefile-type Makefile
+  :configuration-variables '("debug" (("DEBUG" . "1"))))
